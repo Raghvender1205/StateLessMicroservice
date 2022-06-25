@@ -1,5 +1,5 @@
 const jwt = require('jsonwebtoken');
-require('dotenv').load();
+require('dotenv').config();
 
 // Get the extension of a url/file
 exports.fileExtension = (url) => { return url.split('.').pop().split(/\#|\?/)[0] }

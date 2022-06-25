@@ -1,7 +1,8 @@
 const jwt = require('jsonwebtoken');
 const { body, validationResult } = require('express-validator/check');
 const { sanitizeBody } = require('express-validator/filter');
-require('dotenv').load();
+const dotenv = require('dotenv');
+dotenv.config();
 
 exports.user_login_post = [
     // Validate Input fields. Trim spaces around username
